@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <section id="form">
+            <h1>Fill Up The Form</h1>
+            <form action="./thank.html" method="GET">
+                <fieldset  class="name">
+                <legend>Name</legend>
+                <div class="fname">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" name="fname" id="fnaem"> <br>
+                </div>
+                <div class="lname">
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" name="lname" id="lnaem"> 
+                </div>
+                </fieldset>
+
+                <fieldset class="pInfo">
+                   <legend>Personal Information</legend>
+                   <div class="gender">
+                    <label for="gender">Gender: </label>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" name="gender"  id="female" value="female">
+                         <label for="female">Female</label>
+
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">Other</label><br>
+                    </div>
+                    <div class="bday">
+                    <label for="">Birth Day: </label>
+                    <input type="date" name="date" id="bdate">
+                </div>
+                <div class="contry">
+                   <label for="">Country: </label>
+                    <select name="country" id="country">
+                        <option value="india">India</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="Bangladesh">Bangaldesh</option>
+                    </select><br>
+                </div>
+                <div class="contact">
+                    <label>Phone Number:</label>
+                    <input type="tel" name="phoneNum" id="phoneNum" maxlength="10"><br>
+
+                    <label>Email:</label>
+                    <input type="email" name="email" id="emil">
+           
+               
+                </div>
+                </fieldset>
+                <fieldset class="hob">
+                    <div class="hobselect">
+                    <legend>Hobbies</legend>
+                    <input type="checkbox" name="cricket" id="cricket" value="cricket">
+                    <label for="cricket">Cricket</label>
+
+                    <input type="checkbox" name="football" id="football" value="football">
+                    <label for="football">Football</label> 
+
+                    <input type="checkbox" name="reading" id="reading" value="reading">
+                    <label for="reading">reading</label> 
+
+                    <input type="checkbox" name="cricket" id="cricket" value="cricket">
+                    <label for="cricket">Cricket</label> 
+
+                    <input type="checkbox" name="cricket" id="cricket" value="cricket">
+                    <label for="cricket">Cricket</label> 
+                </div>
+                    <div class="other">
+                    <label for="other">Other:</label>
+                    <textarea name="hoby" id="other" cols="18" rows="3"></textarea>
+                </div>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Tell me About Yourself</legend>
+                    <textarea name="hoby" id="other" cols="100" rows="10"></textarea>
+
+                </fieldset>
+               <input id="submit" type="submit" value="submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
